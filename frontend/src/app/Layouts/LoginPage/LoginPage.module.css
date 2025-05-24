@@ -1,0 +1,19 @@
+.formBox {
+  max-width: 400px;
+  margin: 80px auto 0 auto;
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.loginButton {
+  margin-top: 16px;
+}
+
+.errorText {
+  color: red;
+  margin-top: 8px;
+  text-align: center;
+}

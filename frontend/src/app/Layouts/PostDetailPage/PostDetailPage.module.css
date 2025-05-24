@@ -1,0 +1,37 @@
+.wrapper {
+  margin-top: 100px;
+}
+
+.titleBar {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 24px;
+}
+
+.label {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1a202c;
+  margin-bottom: 4px;
+}
+
+.title {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 24px;
+  color: #1a202c;
+}
+
+.content {
+  font-size: 16px;
+  line-height: 1.6;
+  white-space: pre-line;
+  color: #333;
+  margin-bottom: 24px;
+}
+
+.meta {
+  font-size: 14px;
+  color: #666;
+  font-style: italic;
+}

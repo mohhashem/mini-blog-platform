@@ -1,0 +1,16 @@
+# Node.js (frontend)
+node_modules/
+.next/
+.env*
+
+# .NET Core (backend)
+**/bin/
+**/obj/
+**/*.user
+**/*.suo
+
+# System
+.DS_Store
+Thumbs.db
+.vscode/
+.vs/
