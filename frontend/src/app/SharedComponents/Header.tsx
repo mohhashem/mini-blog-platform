@@ -17,9 +17,14 @@ const Header = () => {
   return (
     <AppBar position="fixed" sx={{ backgroundColor: "#333" }}>
       <Toolbar>
-        <Typography variant="h6" sx={{ flexGrow: 1 }}>
-          Blog
-        </Typography>
+        <Box
+          sx={{ flexGrow: 1, cursor: "pointer" }}
+          onClick={() => router.push("/")}
+        >
+          <Typography variant="h6" color="inherit">
+            Blog
+          </Typography>
+        </Box>
 
         {loading ? (
           <Box display="flex" alignItems="center" gap={2}>

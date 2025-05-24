@@ -1,15 +1,22 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { useParams } from "next/navigation";
-import { Container, Typography, CircularProgress, Box, Chip } from "@mui/material";
+import { useParams, useRouter } from "next/navigation";
+import {
+  Container,
+  Typography,
+  CircularProgress,
+  Box,
+  Chip,
+  Button,
+} from "@mui/material";
 import { fetchPostById } from "../../services/postService";
 import styles from "./PostDetailPage.module.css";
 import { Post } from "@/app/types/post";
 
-
 const PostDetailPage = () => {
   const { id } = useParams();
+  const router = useRouter();
   const [post, setPost] = useState<Post | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
@@ -63,6 +70,12 @@ const PostDetailPage = () => {
       <Typography className={styles.meta}>
         By {post.author} on {new Date(post.createdAt).toLocaleString()}
       </Typography>
+
+      <Box mt={4}>
+        <Button variant="contained" color="primary" onClick={() => router.push("/")}>
+          Back to Home
+        </Button>
+      </Box>
     </Container>
   );
 };
