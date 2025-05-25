@@ -107,10 +107,11 @@ npm run dev
 
 > These are seeded directly in the in-memory database:
 
-| Username | Password hashed  |
-|----------|------------------|
+| Username | Password hashed   
+|----------|------------------------------------------------------------------------------------------|
 | `admin`  | AQAAAAIAAYagAAAAECBDv45HjKh8fICAQiGHxYrLOG//1pNWP4o2hLW7823KluFc/NxDltWfAQDXP8ldlQ== |
 
+password: admin123
 > You can change this in `OnModelCreating` in `BlogDbContext.cs`
 
 ---
